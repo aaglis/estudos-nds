@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-principal fieldset{
+    width: 70%;
+}
+
+.container-principal fieldset .element {
+    padding: 0.2rem 0 1.3rem 0.5rem;
+}
+
+.container-principal fieldset .message {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.container-principal fieldset .botao button {
+    width: 60px;
+}

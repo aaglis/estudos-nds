@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 0.4rem;
+}
+
+header div {
+    padding-bottom: 1rem;
+}
+
+article h1 {
+    padding-bottom: 0.6rem;
+}
+
+article figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article figure figcaption {
+    padding-bottom: 0.5rem;
+}
+
+article .container-img, 
+article figure img {
+    width: 400px;
+}
+
+.parag1,
+.parag2,
+.parag3,
+.parag4 {
+    width: 750px;
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+p span {
+    font-weight: bold;
+}
+
+.img-autor img {
+    padding: 1rem 0 0.6rem 0;
+}
+
+.autor-foto p {
+    padding-bottom: 0.5rem;
+}
+
+.autor-texto p {
+    width: 750px;
+    text-align: justify;
+}
+

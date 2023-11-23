@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans';
+    background-color: var(--body-bg-color);
+}
+
+.container-principal {
+    width: 95%;
+    display: flex;
+    margin: 2rem auto 0 auto;
+}
+
+.global-sets {
+    box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.4);
+    background-color: var(--bg-cards);
+    border-radius: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/*color texts*/
+h3, 
+h4,
+ul li, 
+li p,
+div p {
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+
+
+.icon-profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.aside {
+    width: 20%;
+    margin: 0rem 2.5rem 0 0;
+}
+
+/*profile*/
+
+.profile {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-profile {
+    margin-top: 1.6rem;
+}
+
+.info-profile p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+
+/*informacoes adicionais*/
+
+
+.info-adicionais {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+}
+
+.info-adicionais .info {
+    margin: 0.8rem 0rem 0.8rem 2.5rem;
+}
+
+.info-adicionais .info a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.info-adicionais .info a p {
+    font-size: 0.9rem;
+}
+
+.info-adicionais .info a img {
+    margin-right: 1rem;
+}
+
+/*Tecnologias*/
+.title-tec {
+    grid-area: title-tec;
+}
+
+.javascript {
+    grid-area: javascript;
+}
+
+.reactjs {
+    grid-area: reactjs;
+}
+
+.nodejs {
+    grid-area: nodejs;
+}
+
+.git {
+    grid-area: git;
+}
+
+.github {
+    grid-area: github;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.exilir {
+    grid-area: elixir;
+}
+
+.react-native {
+    grid-area: react-native;
+}
+
+.tecnologias {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.title-tec,
+.title-ed,
+.title-xp {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.name-tecs {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 30px 30px 30px;
+    grid-template-areas: "javascript reactjs nodejs"
+    "git github html"
+    "css elixir react-native";
+    gap: 20px;
+}
+
+.name-tecs button {
+    font-weight: bold;
+    font-size: 0.63rem;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: var(--bg-techs);
+}
+
+
+/*experiências e educação*/
+.experiencias,
+.educacao {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-xp,
+.container-ed {
+    width: 80%;
+    list-style-position: inside;
+}
+
+.container-ed ul li,
+.container-xp ul li {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.data-edu,
+.data-xp {
+    margin-bottom: 1.85rem;
+}
+
+
+.data-xp .size-data,
+.data-edu .size-data {
+    font-size: 0.72rem;
+}
+
+.data-xp .size-name,
+.data-edu .size-name {
+    font-size: 0.82rem;
+}
+
+/*right container*/
+.right-container {
+    width: 77%;
+}
+
+.projects, 
+.recent-posts {
+    height: 86px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .agrupamento-projects {
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.all-projects a {
+    text-decoration: none;
+}
+
+
+/* main || info-projetos*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.agrupamento-projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p1, .p2 {
+    width: 48%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.agrupamento-content-p1,
+.agrupamento-content-p2 {
+    width: 95%;
+    padding-left: 2.2rem;
+}
+
+.title-project {
+    display: flex;
+}
+
+.title-project img {
+    margin-right: 1.2rem;
+}
+
+.title-project p {
+    font-size: 1.03rem;
+    font-weight: bold;
+}
+
+.descricao {
+    width: 85%;
+    margin: 2rem 0 2rem 0;
+}
+
+.descricao p {
+    text-align: justify;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-details {
+    display: flex;
+}
+
+.icons-details .img-star img,
+.icons-details .img-pull-request img {
+    margin-right: 0.3rem;
+}
+
+.icons-details .img-star,
+.icons-details .img-pull-request {
+    display: flex;
+}
+
+.icons-details .img-star {
+    margin-right: 1.5rem;
+}
+
+.details-tecnologia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.details-tecnologia .color-tec{
+    width: 17px;
+    height: 17px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    margin-right: 0.5rem;
+}
+
+.recent-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-posts .title-recent {
+    width: 95%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 230px;
+}
+
+
+footer .agrupamento-footer {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer .agrupamento-footer .footer-profile {
+    margin-right: 2rem;
+}
+
+.info-1, .info-2 {
+    line-height: 1.5rem;
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    font-family: 'roboto';
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 0.5rem auto 2rem auto;
+    padding-bottom: 2rem;
+    width: 50%;
+    border-radius: 1rem;
+}
+
+
+.titulo-ingredientes,
+.titulo-modo-de-preparo,
+.titulo-info-adicionais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 1.2rem 0;
+}
+
+.titulo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 1.2rem 0;
+}
+
+.container-img .div-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img .div-img img {
+    width: 93%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.container-img .descricao-img {
+    width: 93%;
+    display: flex;
+    justify-content: right;
+}
+.container-img .descricao-img p {
+    padding-top: 0.2rem;
+    font-style: italic;
+    color: #8f8f8f;
+}
+
+
+.lista-ingredientes,
+.lista-modo-de-preparo {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.lista-ingredientes ul,
+.lista-modo-de-preparo ol {
+    list-style-position: inside;
+}
+
+.lista-ingredientes ul li,
+.lista-modo-de-preparo ol li {
+    color: #8f8f8f;
+    padding-bottom: 1.3rem;
+}
+
+
+.texto-info-adicionais{
+    width: 93%;
+    margin: 0 auto;
+}
+
+footer {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #8f8f8f;
+}
+
+footer p img {
+    width: 2vh;
+    
+}
