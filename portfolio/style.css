@@ -47,8 +47,8 @@ h3 {
 
 
 .icon-profile img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -87,11 +87,13 @@ h3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
 }
 
+
 .info-adicionais .info {
-    margin: 0.8rem 0rem 0.8rem 2.5rem;
+    margin: 0.7rem 0 0.7rem 0;
+    width: 80%;
 }
 
 .info-adicionais .info a {
@@ -103,6 +105,8 @@ h3 {
 
 .info-adicionais .info a p {
     font-size: 0.9rem;
+    width: 80%;
+    word-wrap: break-word;
 }
 
 .info-adicionais .info a img {
@@ -170,12 +174,13 @@ h3 {
 
 .name-tecs {
     display: grid;
-    width: 80%;
-    grid-template-columns: 80px 80px 80px;
-    grid-template-rows: 30px 30px 30px;
+    width: 90%;
+    justify-content: center;
+    grid-template-columns: 23% 23% 23%;
+    grid-template-rows: 28px 28px 28px;
     grid-template-areas: "javascript reactjs nodejs"
-    "git github html"
-    "css elixir react-native";
+                         "git github html"
+                         "css elixir react-native";
     gap: 20px;
 }
 
@@ -366,6 +371,32 @@ footer .agrupamento-footer {
     margin-right: 2rem;
 }
 
-.info-1, .info-2 {
-    line-height: 1.5rem;
+.info-footer-profile {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-1 h4,
+.info-2 h4 {
+    font-size: 1.13rem;
+}
+
+.info-1 p,
+.info-2 .info-hashtags p {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+}
+
+.info-2 h4 {
+    font-weight: normal;
+}
+
+.info-2 .info-hashtags p {
+    margin-right: 1.5rem;
+}
+
+.info-hashtags {
+    display: flex;
 }
