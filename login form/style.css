@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--background);
+}
+
+.container-main {
+    background-color: var(--background);
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.left-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.left-container .img-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+.container-form {
+    display: inline;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--form-background);
+    width: 85%;
+    padding: 45px 60px;
+    border-radius: 2rem;
+}
+
+.container-title-form {
+    display: flex;
+}
+
+.container-title-form h2 {
+    font-size: 1.25rem;
+    color: var(--text-title);
+}
+
+.container-title-form img {
+    margin-right: 0.5rem;
+}
+
+label,
+p {
+    color: var(--text-base);
+}
+
+.container-p p {
+    margin-top: 0.2rem;
+    margin-bottom: 1.7rem;
+}
+
+.for-email,
+.for-password {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.for-email {
+    margin-bottom: 1.2rem;
+}
+
+
+.for-email input,
+.for-password input {
+    height: 45px;
+    background-color: var(--form-background);
+    border-style: none;
+    border: 1px solid var(--text-base);
+    padding-left: 2rem;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.for-email input {
+    background-image: url("img/icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 0.5rem;
+}
+.for-password input {
+    background-image: url("img/icons/lock.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 0.5rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 1rem;
+    color: var(--text-base);
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 1.1rem;
+    color: var(--text-base);
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 1rem;
+    color: var(--text-base);
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 1rem;
+    color: var(--text-base);
+}
+
+.options-password {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+.opt-remember {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding-left: 26px;
+    padding-bottom: 10px;
+}
+
+.opt-remember input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--text-base);
+    margin-top: 2px;
+    border-radius: 5px;
+    background-color: var(--form-background);
+}
+
+.opt-remember input:checked ~ .checkmark {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.opt-remember input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.opt-remember .checkmark:after {
+    left: 6px;
+    top: 4px;
+    width: 4px;
+    height: 9px;
+    border: solid var(--background);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    font-size: 1.03rem;
+    font-weight: bold;
+    color: #473404;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.register {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.register p {
+    color: var(--primary-color);
+}
+
+.right-container {
+    width: 50%;
+}
+
+.right-container .img-form {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
