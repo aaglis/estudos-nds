@@ -21,8 +21,8 @@ body {
 
 .container-main {
     background-color: var(--background);
-    width: 95%;
-    height: 95%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -30,7 +30,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 2rem;
     overflow: hidden;
 }
 
@@ -43,21 +42,21 @@ body {
     position: relative;
 }
 
-.left-container .img-logo {
+.container-img-logo {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 20px;
+    padding: 30px;
 }
+
 
 .container-form {
     display: inline;
     flex-direction: column;
-    position: absolute;
     background-color: var(--form-background);
-    width: 85%;
-    padding: 45px 60px;
-    border-radius: 2rem;
+    width: 75%;
+    padding: 50px 90px;
+    border-radius: 1rem;
 }
 
 .container-title-form {
@@ -187,8 +186,8 @@ p {
   
 /* Style the checkmark/indicator */
 .opt-remember .checkmark:after {
-    left: 6px;
-    top: 4px;
+    left: 6.5px;
+    top: 3px;
     width: 4px;
     height: 9px;
     border: solid var(--background);
