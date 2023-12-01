@@ -99,9 +99,20 @@ p {
     background-color: var(--form-background);
     border-style: none;
     border: 1px solid var(--text-base);
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     border-radius: 5px;
     margin-top: 3px;
+    color: var(--text-base);
+    font-size: 1.09rem;
+    font-family: 'Roboto';
+}
+
+.for-email input:focus,
+.for-password input:focus {
+    outline: none !important;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color)
+    
 }
 
 .for-email input {
@@ -110,11 +121,20 @@ p {
     background-position: left;
     background-position-x: 0.5rem;
 }
+
+.for-email input:focus {
+    background-image: url("img/icons/mail-focus.svg");
+}
+
 .for-password input {
     background-image: url("img/icons/lock.svg");
     background-repeat: no-repeat;
     background-position: left;
     background-position-x: 0.5rem;
+}
+
+.for-password input:focus {
+    background-image: url('img/icons/lock-focus.svg');
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
