@@ -1,0 +1,29 @@
+@media screen and (max-width:1450px) {
+    header p {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    header p {
+        width: 45%;
+    }
+
+    .container-cards {
+        flex-direction: column;
+    }
+
+    .container-cards .card {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    header {
+        padding: 40px 0;
+    }
+
+    header p {
+        width: 60%;
+    }
+}

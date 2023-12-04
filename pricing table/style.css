@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    background-color: var(--page-background);
+}
+
+header {
+    background-color: var(--blue);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+header h1,
+header p {
+    color: var(--page-background);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+header p {
+    text-align: center;
+    margin-top: 15px;
+    width: 25%;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -170px;
+    transition: 0.2s;
+}
+
+.container-cards .card {
+    display: inline;
+    background-color: var(--page-background);
+    height: 530px;
+    margin: 0 15px;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 31px 21px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.container-cards .card:hover,
+.container-cards .card:focus {
+    transform: scale(1.02);
+    box-shadow: 13px 13px 11px -6px rgba(0,0,0,0.1);
+}
+
+.agrupamento-content {
+    padding: 10px 30px;
+}
+
+.card .card-title {
+    display: flex;
+    align-items: center;
+    height: 85px;
+    padding: 0 30px;
+}
+
+.card .card-title p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-price-details .price {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.price p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.price p span {
+    font-size: 1rem;
+}
+
+.price p .price-data {
+    color: var(--gray);
+}
+
+.container-cards .details {
+    padding: 20px 0;
+    border-bottom: 1px dotted var(--gray);
+}
+
+.details p {
+    width: 80%;
+    color: var(--gray);
+}
+
+.popular {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.popular button {
+    width: 85px;
+    height: 35px;
+    border-style: none;
+    background-color: var(--blue);
+    border-radius: 1rem;
+    color: var(--page-background);
+
+}
+
+.popular p {
+    color: var(--blue);
+}
+
+.benefits {
+    margin-top: 20px;
+}
+
+.benefits .beneficio {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.beneficio p {
+    color: var(--gray);
+    font-weight: bold;
+}
+
+.beneficio img {
+    margin-right: 15px;
+}
+
+.container-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.container-btn button {
+    width: 85%;
+    height: 50px;
+    border-radius: 1rem;
+    border: 2px solid var(--blue);
+    background-color: var(--page-background);
+    color: var(--blue);
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.container-btn button:hover {
+    background-color: var(--blue);
+    color: var(--page-background);
+    border: none;
+}
